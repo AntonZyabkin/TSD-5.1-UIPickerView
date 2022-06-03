@@ -9,13 +9,33 @@ import UIKit
 
 class AddingInfoViewController: UIViewController {
 
+    @IBOutlet weak var choosePhotoButton: UIButton!
+    @IBOutlet weak var dateOfBirthdayoutlet: UITextField!
+    @IBOutlet weak var maleTextFieldOutlet: UITextField!
+    @IBOutlet weak var ageTextFieldOutlet: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func choosePhotoButonAction(_ sender: UIButton) {
+    }
+    
+    @IBAction func dateOfBirthdayTextFieldAction(_ sender: UITextField) {
+    }
+    @IBAction func maleTextFieldAction(_ sender: UITextField) {
+    }
+    
+    @IBAction func ageTextFIeldAction(_ sender: UITextField) {
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

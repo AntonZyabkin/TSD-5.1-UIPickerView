@@ -79,8 +79,8 @@
 		E8DCA059284A067D000596ED /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				E8DCA047284A05EA000596ED /* BirthdayViewController.swift */,
 				E8DCA057284A064A000596ED /* SingViewController.swift */,
+				E8DCA047284A05EA000596ED /* BirthdayViewController.swift */,
 				E8DCA05F284A075F000596ED /* AddingInfoViewController.swift */,
 			);
 			path = VC;

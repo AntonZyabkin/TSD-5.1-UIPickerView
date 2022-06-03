@@ -9,21 +9,23 @@ import UIKit
 
 class SingViewController: UIViewController {
 
+    @IBOutlet weak var eyePasswordButtonOutlet: UIButton!
+    @IBOutlet weak var enterButtonOutlet: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func eyePasswordAction(_ sender: UIButton) {
     }
-    */
-
+    
+    @IBAction func enterButtonAction(_ sender: UIButton) {
+    }
+    
 }
