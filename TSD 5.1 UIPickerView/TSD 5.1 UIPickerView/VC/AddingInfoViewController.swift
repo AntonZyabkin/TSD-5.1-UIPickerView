@@ -8,42 +8,77 @@
 import UIKit
 
 class AddingInfoViewController: UIViewController {
+    
+    
+    
+    var datePicker = UIDatePicker ()
+    
 
-    @IBOutlet weak var choosePhotoButton: UIButton!
+    @IBOutlet weak open var choosePhotoButton: UIButton!
     @IBOutlet weak var dateOfBirthdayoutlet: UITextField!
     @IBOutlet weak var maleTextFieldOutlet: UITextField!
     @IBOutlet weak var ageTextFieldOutlet: UITextField!
     
+    @IBOutlet weak var fullNameTextFieldOutlet: UITextField!
     
+    @IBOutlet weak var phoneNumberTextFieldOutlet: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Adding new person"
+        phoneNumberTextFieldOutlet.keyboardType = .numberPad
+        
+        dateOfBirthdayoutlet.inputView = datePicker
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
+        let localeID = Locale.preferredLanguages.first
+        datePicker.locale = Locale(identifier: localeID!)
+        
+        
+        let toolbar = UIToolbar ()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem (barButtonSystemItem: .done, target: self, action: #selector(doneActon))
+        let flexSpace = UIBarButtonItem (barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolbar.setItems([flexSpace, doneButton], animated: true)
+        
+        dateOfBirthdayoutlet.inputAccessoryView = toolbar
 
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func choosePhotoButonAction(_ sender: UIButton) {
-    }
-    
-    @IBAction func dateOfBirthdayTextFieldAction(_ sender: UITextField) {
-    }
-    @IBAction func maleTextFieldAction(_ sender: UITextField) {
-    }
-    
-    @IBAction func ageTextFIeldAction(_ sender: UITextField) {
-    }
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
+    } 
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func doneActon () {
+        getDateFromPicker ()
+        view.endEditing(true)
     }
-    */
+
+    
+    func getDateFromPicker () {
+        let formater = DateFormatter ()
+        formater.dateFormat = "dd.mm.yyyy"
+        dateOfBirthdayoutlet.text = formater.string(from: datePicker.date)
+        
+    }
+    
+
+    
+    @IBAction func maleTFAction(_ sender: UITextField) {
+
+    }
+    
+    @IBAction func ageTFAction(_ sender: Any) {
+        
+    }
+    
+    
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        dateOfBirthdayoutlet.resignFirstResponder()
+        maleTextFieldOutlet.resignFirstResponder()
+        fullNameTextFieldOutlet.resignFirstResponder()
+        phoneNumberTextFieldOutlet.resignFirstResponder()
+        ageTextFieldOutlet.resignFirstResponder()
+
+    }
 
 }

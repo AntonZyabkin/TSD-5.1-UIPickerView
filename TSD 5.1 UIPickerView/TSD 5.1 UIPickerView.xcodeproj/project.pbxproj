@@ -17,6 +17,7 @@
 		E8DCA05C284A06B3000596ED /* SingModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCA05B284A06B3000596ED /* SingModul.swift */; };
 		E8DCA05E284A06D0000596ED /* BirthdayInfoModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCA05D284A06D0000596ED /* BirthdayInfoModul.swift */; };
 		E8DCA060284A075F000596ED /* AddingInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCA05F284A075F000596ED /* AddingInfoViewController.swift */; };
+		E8DCA062284A59AB000596ED /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DCA061284A59AB000596ED /* ImagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E8DCA05B284A06B3000596ED /* SingModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingModul.swift; sourceTree = "<group>"; };
 		E8DCA05D284A06D0000596ED /* BirthdayInfoModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayInfoModul.swift; sourceTree = "<group>"; };
 		E8DCA05F284A075F000596ED /* AddingInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingInfoViewController.swift; sourceTree = "<group>"; };
+		E8DCA061284A59AB000596ED /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E8DCA057284A064A000596ED /* SingViewController.swift */,
 				E8DCA047284A05EA000596ED /* BirthdayViewController.swift */,
 				E8DCA05F284A075F000596ED /* AddingInfoViewController.swift */,
+				E8DCA061284A59AB000596ED /* ImagesViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				E8DCA05E284A06D0000596ED /* BirthdayInfoModul.swift in Sources */,
 				E8DCA048284A05EA000596ED /* BirthdayViewController.swift in Sources */,
+				E8DCA062284A59AB000596ED /* ImagesViewController.swift in Sources */,
 				E8DCA044284A05EA000596ED /* AppDelegate.swift in Sources */,
 				E8DCA05C284A06B3000596ED /* SingModul.swift in Sources */,
 				E8DCA060284A075F000596ED /* AddingInfoViewController.swift in Sources */,

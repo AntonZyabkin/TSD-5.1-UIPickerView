@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import UIKit
+
+
+//MARK: - functions
+
+
+
+func gobirthdayVC (vC: UIViewController) {
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    guard let nextScreen = mainStoryboard.instantiateViewController(identifier: "BirthdayViewController") as? BirthdayViewController else {return}
+    nextScreen.modalPresentationStyle = .fullScreen
+    vC.show(nextScreen, sender: nil)
+}
